@@ -1,3 +1,16 @@
 body{
     background-color: #F3F5FC;
 }
+.textoEncriptado{
+background-color:white;
+box-sizing: border-box;
+box-shadow: 24, 32,black ;
+background: linear-gradient(180deg, rgba(243,245,252,1) 60%, rgba(81,93,115,1) 100%);
+
+}
+footer{
+    background-image: url("media/footer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
