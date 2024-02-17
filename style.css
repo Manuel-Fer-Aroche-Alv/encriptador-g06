@@ -2,12 +2,15 @@ body{
     width:auto;
     background-image: linear-gradient(to bottom, #ffffff, #f6f6f6, #ededed, #e4e4e4, #dbdbdb, #cecdd0, #c0bfc5, #b3b2ba, #9d9daa, #87899b, #70768d, #546078);
 }
+header{
+    padding: 25px
+}
 .divContenedor{
     display: flex;
 }
 .areasResultado textarea{
     width: 400px;
-    height: 300px;
+    height: 200px;
     resize: none;
     border: #F3F5FC;
     filter: drop-shadow(10px 7px 20px gray);
@@ -19,10 +22,16 @@ body{
     margin-left: 10px;
     border-radius: 10px;
     opacity: 0.3;
- 
-}
+ }
+ .areasResultado h2{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color:#495057;
+    font-weight: bolder;
+ }
 .textoEncriptado{
-    width 40%;
+    width: 40%;
     display: flexbox;
     align-items: center;
     padding: 20px;
@@ -36,7 +45,7 @@ body{
 }
 .textoEncriptado textarea{
    width: 400px;
-   height: 300px;
+   height: 200px;
    resize: none;
     border: #F3F5FC;
     filter: drop-shadow(10px 7px 20px gray);
@@ -48,8 +57,60 @@ body{
     border-radius: 10px;
     opacity: 0.3;
 }
+.botonesPrincipales{
+    display: flex;
+    margin-top: 0;
+    align-items: center;
+}
+.botonEncriptar{
+    width: 45%;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 15px;
+    border: none;
+    color:#072b61;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #9d9daa;
+    filter: drop-shadow(10px 7px 20px rgb(39, 38, 38));
+}
+.botonEncriptar:hover{
+    background-color: #072B61;
+     color: whitesmoke;
+    font-size: 18px;
+    filter: drop-shadow(10px 7px 20px #4673b6);
+    transition-delay: 100ms
+}
+.botonDesencriptar{
+    width:45%;
+    margin-left: 25px;
+    margin-top: 15px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: #9d9daa;
+    filter: drop-shadow(10px 7px 20px rgb(39, 38, 38));
+    color:#072b61;
+    font-size: 16px;
+    font-weight: bold;
+}
+.botonDesencriptar:hover{
+    background-color: #072B61;
+     color: whitesmoke;
+    font-size: 18px;
+    filter: drop-shadow(10px 7px 20px #4673b6);
+    transition-delay: 100ms
+}
 footer{
+    padding: ;
     background-image: url("media/footer.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+.logoFooter{
+    margin-left: 50%;
+}
+footer h3{
+    margin-left: 50%;
 }
