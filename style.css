@@ -1,16 +1,55 @@
 body{
-    background-color: #F3F5FC;
+    width:auto;
+    background-image: linear-gradient(to bottom, #ffffff, #f6f6f6, #ededed, #e4e4e4, #dbdbdb, #cecdd0, #c0bfc5, #b3b2ba, #9d9daa, #87899b, #70768d, #546078);
+}
+.divContenedor{
+    display: flex;
+}
+.areasResultado textarea{
+    width: 400px;
+    height: 300px;
+    resize: none;
+    border: #F3F5FC;
+    filter: drop-shadow(10px 7px 20px gray);
+    text-size-adjust: auto;
+    text-align: justify;
+    color: #495057;
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 10px;
+    border-radius: 10px;
+    opacity: 0.3;
+ 
 }
 .textoEncriptado{
-background-color:white;
-box-sizing: border-box;
-box-shadow: 24, 32,black ;
-background: linear-gradient(180deg, rgba(243,245,252,1) 60%, rgba(81,93,115,1) 100%);
-
+    width 40%;
+    display: flexbox;
+    align-items: center;
+    padding: 20px;
+    margin-left: 220px ;
+   
+}
+.imagenResultado{
+    margin-left: 80px;
+    filter: drop-shadow(10px 7px 20px gray);
+    opacity: 0.85;
+}
+.textoEncriptado textarea{
+   width: 400px;
+   height: 300px;
+   resize: none;
+    border: #F3F5FC;
+    filter: drop-shadow(10px 7px 20px gray);
+    text-size-adjust: auto;
+    text-align: justify;
+    color: #495057;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    opacity: 0.3;
 }
 footer{
     background-image: url("media/footer.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-
 }
