@@ -15,18 +15,18 @@
     <main>
         <div class="divContenedor">
             <form class="areasResultado">
-                <textarea>Ingrese el texto a convertir</textarea>
+                <textarea id="taAConvertir">Ingrese el texto a convertir</textarea>
                 <p>
                     <h2><strong>&#9888</strong> letras mínusculas y sin acentos</h2>
                 </p>
                 <div class="botonesPrincipales">
-                    <input type="submit" value="Encriptar" class="botonEncriptar">
-                    <input type="submit" value="Desencriptar" class="botonDesencriptar">
+                    <input type="button" value="Encriptar" class="botonEncriptar" onclick="BotonA()">
+                    <input type="button" value="Desencriptar" class="botonDesencriptar" onclick="BotonB()">
                 </div>
             </form>
             <div class="textoEncriptado">   
                 <img src="media/Muñeco.png" width="30%" height="30%" class="imagenResultado">
-                <textarea>Resultado del texto convertido/desencriptado</textarea>
+                <textarea id="textoDesencriptar">Resultado del texto convertido/desencriptado</textarea>
             </div>
         </div>
         
@@ -39,5 +39,6 @@
         <a href="https://twitter.com/MemeAsecas"><img src="media/twitter.png" width="5%" height="5%" ></a>
     </h3>
 </footer>
+<script src="app.js"></script>
 </body>
 </html>
