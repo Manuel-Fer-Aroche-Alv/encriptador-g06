@@ -8,11 +8,13 @@ let resultadoTexto="";
  * hace referencia al id=taAConvertir
  */
 function ObtenerTexto(){
-       let cadenaRecibida=document.getElementById('taAConvertir').value;
+       textoATrabajar="";
+       resultadoTexto="";
+       let cadenaRecibida=document.getElementById('taTextoEntrada').value;
        textoATrabajar=String(cadenaRecibida); 
 }
 function ColocarResultado(texto){
-   document.getElementById('textoDesencriptar').value=texto;
+   document.getElementById('taTextoSalida').value=texto;
 }
 /**
  * Función para encriptar el texto
@@ -96,5 +98,27 @@ function BotonA(){
 function BotonB(){
     ObtenerTexto();
     Desencriptar(textoATrabajar);
+    ColocarResultado(resultadoTexto);
+}
+/**
+ * Función que realiza el copiado del texto 
+ * en la casilla de desencripción
+ * se maneja con errores por medio de try/catch
+ */
+function Copiar(){
+    var textoACopiar=document.getElementById("taTextoSalida").value
+    console.log(textoACopiar);
+    navigator.clipboard.writeText(textoACopiar)
+    .then(() => {
+        console.log("El texto ha sido copiado :-)");
+    })
+    .catch(error => {
+        // Por si el usuario no da permiso u ocurre un error
+        console.log("Hubo un error: ", error);
+    });
 }
 
+function Borrar(){
+    document.getElementById("taTextoSalida").Vaue="";
+    document.getElementById("taTextoEntrada").value="";
+}

@@ -1,5 +1,7 @@
 body{
     width:auto;
+    height:auto;
+    display: inline;
     background-image: linear-gradient(to bottom, #ffffff, #f6f6f6, #ededed, #e4e4e4, #dbdbdb, #cecdd0, #c0bfc5, #b3b2ba, #9d9daa, #87899b, #70768d, #546078);
 }
 header{
@@ -7,10 +9,12 @@ header{
 }
 .divContenedor{
     display: flex;
+    width: auto;
+    height: auto;
 }
 .areasResultado textarea{
-    width: 400px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     resize: none;
     border: #F3F5FC;
     filter: drop-shadow(10px 7px 20px gray);
@@ -29,13 +33,14 @@ header{
     font-size: 14px;
     color:#495057;
     font-weight: bolder;
+    
  }
 .textoEncriptado{
     width: 40%;
     display: flexbox;
     align-items: center;
-    padding: 20px;
-    margin-left: 220px ;
+    padding: 1px;
+    margin-left: 100px ;
    
 }
 .imagenResultado{
@@ -43,20 +48,43 @@ header{
     filter: drop-shadow(10px 7px 20px gray);
     opacity: 0.85;
 }
+.botonCopiar{
+    width: 45%;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 15px;
+    border: none;
+    color:#072b61;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #9d9daa;
+    filter: drop-shadow(10px 7px 20px rgb(39, 38, 38));
+}
+.botonCopiar:hover{
+    opacity: 0.95;
+    filter: drop-shadow(10px 7px 20px orange);
+    transition-duration: 1000ms;
+}
+.textoEncriptado{
+    width: 30%;
+    height:auto;
+}
 .textoEncriptado textarea{
-   width: 400px;
-   height: 200px;
-   resize: none;
+   width: 100%;
+   height: 50%;
+   resize: none;    
     border: #F3F5FC;
     filter: drop-shadow(10px 7px 20px gray);
     text-size-adjust: auto;
     text-align: justify;
     color: #495057;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 5px;
+    margin-top: 10px;
     border-radius: 10px;
     opacity: 0.3;
 }
+
 .botonesPrincipales{
     display: flex;
     margin-top: 0;
@@ -103,6 +131,8 @@ header{
     transition-delay: 100ms
 }
 footer{
+    padding-top: 11px;
+    margin-top: 150px;
     background-image: url("media/footer.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -112,4 +142,15 @@ footer{
 }
 footer h3{
     margin-left: 50%;
+}
+@media (min-widht: 600px) {
+    body{
+        display: inline;
+        width: auto;
+    }
+    .divContenedor{
+        display: block;
+        width: 300;
+        height: 300;
+    }
 }

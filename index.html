@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="reset.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="stylenew.css">
     <title>Encriptador de Palabras</title>
+    <script src="app.js"></script>
 </head>
-<header>
-    <h1><img src="media/Logo.png"></h1>
-</header>
+
 <body>
+    <header>
+        <h1><img src="media/Logo.png"></h1>
+    </header>
     <main>
-        <div class="divContenedor">
-            <form class="areasResultado">
-                <textarea id="taAConvertir">Ingrese el texto a convertir</textarea>
+        <div class="contenedor">
+            <div class="divIngresoTexto">
+                <textarea id="taTextoEntrada" class="taAConvertir"
+                    onclick="Borrar()">Ingrese el texto a convertir</textarea>
                 <p>
-                    <h2><strong>&#9888</strong> letras mínusculas y sin acentos</h2>
+                <h2><strong>&#9888</strong> letras mínusculas y sin acentos</h2>
                 </p>
                 <div class="botonesPrincipales">
                     <input type="button" value="Encriptar" class="botonEncriptar" onclick="BotonA()">
                     <input type="button" value="Desencriptar" class="botonDesencriptar" onclick="BotonB()">
                 </div>
-            </form>
-            <div class="textoEncriptado">   
-                <img src="media/Muñeco.png" width="30%" height="30%" class="imagenResultado">
-                <textarea id="textoDesencriptar">Resultado del texto convertido/desencriptado</textarea>
+            </div>
+            <div class="salidaTexto">
+                <img src="media/Muñeco.png" class="imagenResultado">
+                <input type="button" value="Copiar" class="botonCopiar" onclick="Copiar()">
+                <textarea id="taTextoSalida" onclick="Borrar()"
+                    readonly>Resultado del texto convertido/desencriptado</textarea>
             </div>
         </div>
-        
-   </main>
-   <footer>
-    <h1><img src="media/MEMEASC.png" width="10%" height="20%" class="logoFooter"></h1>
-    <h3><a href="https://www.linkedin.com/in/manuel-fernando-aroche-alvarez-417876115/"><img src="media/linkedin.png" width="5%" height="5%" ></a>
-        <a href="https://www.instagram.com/meme_asecas/"><img src="media/instsagram.png" width="5%" height="5%" ></a>
-        <a href="https://www.facebook.com/memixto"><img src="media/facebook.png" width="5%" height="5%" ></a>
-        <a href="https://twitter.com/MemeAsecas"><img src="media/twitter.png" width="5%" height="5%" ></a>
-    </h3>
-</footer>
-<script src="app.js"></script>
+    </main>
+    <footer>
+        <div>
+            <h1><img src="media/MEMEASC.png" class="logoFooter"></h1>
+            <h3 class="links"><a href="https://www.linkedin.com/in/manuel-fernando-aroche-alvarez-417876115/"><img
+                        src="media/linkedin.png" width="5%" height="5%"></a>
+                <a href="https://www.instagram.com/meme_asecas/"><img src="media/instsagram.png" width="5%"
+                        height="5%"></a>
+                <a href="https://www.facebook.com/memixto"><img src="media/facebook.png" width="5%" height="5%"></a>
+                <a href="https://twitter.com/MemeAsecas"><img src="media/twitter.png" width="5%" height="5%"></a>
+            </h3>
+        </div>
+
+    </footer>
 </body>
 </html>
